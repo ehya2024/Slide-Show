@@ -1,3 +1,12 @@
+@import url('https://v1.fontapi.ir/css/Vazir');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'vazir';
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +14,115 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem 0;
+}
+
+.container > h3 {
+  color: #414141;
+  position: relative;
+  cursor: default;
+}
+
+.container > h3::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: crimson;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reviews {
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #dadada;
+  padding: 20px;
+  cursor: default;
+  position: relative;
+}
+
+.reviews-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+
+.reviews-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.quote {
+  position: absolute;
+  left: 5px;
+  color: whitesmoke;
+  background-color: crimson;
+  border-radius: 100%;
+  padding: 4px;
+  font-size: 19px;
+}
+
+.name {
+  color: #414141;
+  font-weight: bold;
+}
+
+.job {
+  color: crimson;
+  margin: 4px 0 10px 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.info {
+  color: #5f5f5f;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.reviews-btns {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 0 5px;
+}
+
+.reviews-btns button {
+  background-color: transparent;
+  border: none;
+  color: crimson;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.random-btn {
+  background-color: pink;
+  color: crimson;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
 }
